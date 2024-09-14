@@ -17,14 +17,14 @@ const Todolist = () => {
       Title: inputnote,
     };
 
-    setNotes([...notes, newNote]); // Update the notes array
-    setInputnote(''); // Clear the input field after adding the note
+    setNotes([...notes, newNote]); 
+    setInputnote(''); 
   };
 
   const removeNote = (index) => {
     const newNotes = [...notes];
-    newNotes.splice(index,1); // Remove the note at the given index
-    setNotes(newNotes); // Update the notes array
+    newNotes.splice(index,1); 
+    setNotes(newNotes);
   };
 
   return (
